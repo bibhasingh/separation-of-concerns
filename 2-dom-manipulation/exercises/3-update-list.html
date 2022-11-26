@@ -44,6 +44,12 @@
         <script id="dom-manipulation-script">
           'use strict';
           debugger;
+          const actual = document.getElementById('actual');
+          //const children = actual.children;
+          const ulEl = actual.children[1];
+          const liToCorrect =ulEl.children[0];
+          liToCorrect.innerText = 'robots';
+                
 
           // write me! (... without using cloneNode, that's kind of cheating)
         </script>

@@ -43,7 +43,15 @@
         <script id="dom-manipulation-script">
           'use strict';
           debugger;
+          const aElement = document.createElement('h1');
+          aElement.innerText = 'a list of things'
 
+          const actual = document.getElementById('actual');
+          actual.prepend(aElement)
+
+          const ulEl = actual.children[1];
+          const liEL = ulEl.children[1];
+          liEL.innerText = 'solar systems'
           // write me! (... without using cloneNode, that's kind of cheating)
         </script>
       </div>
