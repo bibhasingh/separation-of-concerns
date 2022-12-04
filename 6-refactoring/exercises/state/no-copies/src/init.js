@@ -1,4 +1,4 @@
-// data to refactor out of this file
+          // data to refactor out of this file
 const data = {
   noCopies: [],
 };
@@ -11,10 +11,10 @@ document.getElementById('no-copies-button').addEventListener('click', () => {
   }
 
   // execute core logic
-  const alreadySaved = data.noCopies.includes(userInput);
-  if (!alreadySaved) {
-    data.noCopies.push(userInput);
-  }
+    const alreadySaved = data.noCopies.includes(userInput);
+    if (!alreadySaved) {
+      data.noCopies.push(userInput);
+    }
 
   // communicate result to user
   const message = data.noCopies.join(', ');
