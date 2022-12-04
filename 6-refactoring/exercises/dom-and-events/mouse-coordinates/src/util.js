@@ -1,4 +1,7 @@
 /**
  *
  */
-export const formatCoordinates = () => {};
+export const formatCoordinates = (X,Y) => {
+
+    return `X: ${X}\nY: ${Y}`;
+};
